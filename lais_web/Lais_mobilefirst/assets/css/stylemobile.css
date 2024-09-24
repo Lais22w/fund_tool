@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* é uma pratica usada no desenvolvimento web para remover ou padronizar os estilos padroes dos navegadores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* 1- define a imagem de fundo
+   2- define a posição de uma imagem de fundo
+   3- controla se a imagem de fundo repete ou não
+   4- se deve rolar ou ficar fixa enquanto o conteúdo é rolado.*/
+
+
+   /* pixel ->para tamanho e dimensões (Largura X Altura)
+   O "vh" e ou "vw" serve para largura de tela (mobile first)
+   Já o "em" e ou "rem", serve somente para fontes (mobile first? CCS3) */
+
+html{
+    height: 100vw;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #122f51 50%, #17a7a8 100%);
+    background-position: bottom ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    /* background-color: #24e0c4; */
+    margin-top: 7px;
+    border-radius: 8px;
+    width: 90vw;
+    margin: auto;
+}
+
+header > h1{
+       text-align: center;
+       color: #e4e3effb;
+}
+
+nav{
+    /* background-color: #8bb6a3; */
+    border-radius: 7px;
+    height: 50px;
+    width: 90vw;
+    margin:auto;
+    text-align: end;
+}
+
+main{
+    background-color: #b0f0ff;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+    border-radius: 0px 0px 0px 0px;
+}
+
+main > h2{
+    color: gold;
+}
+
+footer{
+
+}

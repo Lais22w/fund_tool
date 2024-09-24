@@ -41,3 +41,24 @@ footer{
     padding: 0;
     box-sizing: border-box;
 }
+img{
+    width: 300px;
+    height: 300px;
+}
+
+
+body{
+    background-image: linear-gradient(to bottom #8478dc 50%, #9e90e5 100%);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    justify-content: flex-start;
+    display: flexbox;
+
+}
