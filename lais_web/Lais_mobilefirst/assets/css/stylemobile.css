@@ -22,46 +22,151 @@ html{
 }
 
 body{
-    background-image: linear-gradient(to bottom, #122f51 50%, #17a7a8 100%);
+
+    /* 1) colocar uma imagem de fundo, porém serve para colocar duas cores no fundo.
+       2) posição da imagem de fundo
+       3) se deve repetir a imagem de fundo ou não
+       4) se a imagem deve rolar com o resto da página ou ficar fixa */
+    background-image: linear-gradient(to bottom, #52015a 50%, #b48400 100%);
     background-position: bottom ;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-header{
-    /* background-color: #24e0c4; */
-    margin-top: 7px;
-    border-radius: 8px;
+header {
+    background-color: #0074b4;
+    margin-top: 3px;
+    border-radius: 7px 7px 0px 0px;
     width: 90vw;
     margin: auto;
 }
 
-header > h1{
-       text-align: center;
-       color: #e4e3effb;
+header>h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    margin-top: 17px;
 }
 
-nav{
-    /* background-color: #8bb6a3; */
-    border-radius: 7px;
-    height: 50px;
+#burger {
+    background-color: #f3eedd;
+    /* border: 3px solid; = bordar do elemento */
+    display: block;
+    /* color: rgb(6, 0, 0); = cor da borda do elmento */
+    text-align: center; 
+    margin: auto;
+    padding: 7px;
     width: 90vw;
-    margin:auto;
-    text-align: end;
+    cursor: pointer;
+} 
+
+#burger:hover {
+    background-color: #d4ef07;
 }
 
-main{
-    background-color: #b0f0ff;
+/* nav{
+    background-color: rgb(1, 56, 7); 
+    border-radius: 5px;
+    width: 90vw;
     width: 90vw;
     margin: auto;
     text-align: center;
-    border-radius: 0px 0px 0px 0px;
+} */
+
+menu>ul {
+    list-style-type: none;
 }
 
-main > h2{
-    color: gold;
+menu>ul>li>a {
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #050a09;
+    border-radius: 0px 0px 0px 0px;
+    color: rgb(245, 126, 8);
+    margin: auto;
+
+}
+
+menu>ul>li>a:hover {
+    background-color: #c2551b;
+    color: whitesmoke;
+    text-decoration: none;
+} 
+
+/* #icon_mobile{
+width: 25px; 
+height: 25px; 
+}
+
+#icon_tablet{
+    width: 25px;
+    height: 25px;
+}  */
+
+main{
+    /* background-color: #f14208; */
+    background-image: linear-gradient(to bottom, #0074b4 50%, #00b34c 100%); 
+    width: 90vw;
+    margin: auto;
+    text-align: justify;
+    border-radius: 3px;
+    color: rgb(227, 227, 233);
+}
+
+
+article > p{
+    text-align: justify;
+    /* border: 6px solid #e205a7;  */
+}
+
+article > h2{
+    text-align: justify;
+    color: rgb(3, 2, 0);
+    /* border: 3px solid; */
+    /* background-color: #c2551b; */
 }
 
 footer{
+/* color: #bf1010;  */
+text-align: center;
+/* border: 7px solid;  */
+margin: auto;
+width: 90vw;
+background-color:  #0074b4;
 
+}
+
+img{ 
+    display: block; 
+    margin: auto; 
+}  
+
+img#mobile{
+    display: block;
+}
+
+img#tablet{
+    display: none;
+
+}
+
+img#print{ 
+    display: none;
+}
+
+img#pc{
+    display: none;
+}
+
+img#tv{
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
 }
